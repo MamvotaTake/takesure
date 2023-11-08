@@ -4,6 +4,7 @@ import {IoIosBusiness} from "react-icons/io";
 import {FaFigma} from "react-icons/fa";
 
 import {Review} from "../../components/Review.tsx";
+import {WhatIDo} from "./WhatIDo.tsx";
 
 const reviews  = [
     {
@@ -32,6 +33,29 @@ const reviews  = [
     },
 ]
 
+const whatIdo = [
+    {
+        name: 'Frontend Developer',
+        description: 'The most modern and high-quality design made at a professional level.',
+        icon: <HiMiniCodeBracketSquare className='text-6xl fill-amber-200'/>
+    },
+    {
+        name: 'Backend Developer',
+        description: 'The most modern and high-quality design made at a professional level.',
+        icon: <PiCodesandboxLogo className='text-6xl fill-amber-200'/>
+    },
+    {
+        name: 'Business Developer',
+        description: 'The most modern and high-quality design made at a professional level.',
+        icon: <IoIosBusiness className='text-6xl fill-amber-200'/>
+    },
+    {
+        name: 'UX/UI',
+        description: 'The most modern and high-quality design made at a professional level.',
+        icon: <FaFigma className='text-6xl fill-amber-200'/>
+    }
+]
+
 export const About = () => {
     return (
         <div className='space-y-8 py-12 flex flex-col'>
@@ -47,42 +71,12 @@ export const About = () => {
             <div className='flex flex-col gap-8 '>
                 <h1 className='text-2xl font-bold mt-12'>What I Do</h1>
                 <div className='grid grid-cols-2 gap-7 space-y-8'>
-                    <div className='flex gap-4 bg-gradient-to-t from-gray-900 to-zinc-950/50 rounded-sm shadow-sm shadow-zinc-900 px-4 py-2'>
-                        <HiMiniCodeBracketSquare className='text-8xl fill-amber-200'/>
-                        <span className='text-xl font-bold'>
-                            Frontend Developer
-                            <p className='text-sm mt-2 font-normal'>
-                                The most modern and high-quality design made at a professional level.
-                            </p>
-                        </span>
-                    </div>
-                    <div className='flex gap-4 bg-gradient-to-t from-gray-900 to-zinc-950/50 rounded-sm shadow-sm shadow-zinc-900 px-4 py-2'>
-                        <PiCodesandboxLogo className='text-8xl fill-amber-200'/>
-                        <span className='text-xl font-bold'>
-                            Backend Developer
-                            <p className='text-sm mt-2 font-normal'>
-                                The most modern and high-quality design made at a professional level.
-                            </p>
-                        </span>
-                    </div>
-                    <div className='flex gap-4 bg-gradient-to-t from-gray-900 to-zinc-950/50 rounded-sm shadow-sm shadow-zinc-900 px-4 py-2'>
-                        <IoIosBusiness className='text-8xl fill-amber-200'/>
-                        <span className='text-xl font-bold'>
-                            Business Developer
-                            <p className='text-sm mt-2 font-normal'>
-                                The most modern and high-quality design made at a professional level.
-                            </p>
-                        </span>
-                    </div>
-                    <div className='flex gap-4 bg-gradient-to-t from-gray-900 to-zinc-950/50 rounded-sm shadow-sm shadow-zinc-900 px-4 py-2'>
-                        <FaFigma className='text-8xl fill-amber-200'/>
-                        <span className='text-xl font-bold'>
-                            UI/UX Designer
-                            <p className='text-sm mt-2 font-normal'>
-                                The most modern and high-quality design made at a professional level.
-                            </p>
-                        </span>
-                    </div>
+                    {whatIdo.map((ido) => (
+                        <WhatIDo
+                            key={ido.name}
+                            whatIDo={ido}
+                        />
+                    ))}
                 </div>
                 <div className='flex flex-col space-y-8'>
                     <h1 className='text-2xl font-bold'>Reviews</h1>

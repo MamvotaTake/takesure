@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+    .skill{
+        @apply absolute flex py-6 hover:translate-x-0 transition-all ease-in-out duration-1000 translate-x-36 items-center justify-center  left-0 top-0 bottom-0 right-0 hover:rounded-lg rounded-sm cursor-pointer
+    }
 
     .btn {
         @apply rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 focus:outline-none focus:ring focus:ring-yellow-400 md:px-6 md:py-3
@@ -24,6 +27,21 @@
         height: calc(100% + 50px);
         background: theme(colors.zinc.700);
 
+    }
+    .project-item-icon-box{
+        --scale: 0.8;
+
+        background: theme(colors.zinc.700);
+        color: theme(colors.amber.200);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(var(--scale));
+        font-size: 20px;
+        padding: 18px;
+        border-radius: 12px;
+        opacity: 0;
+        z-index: 1;
     }
 
     .timeline-item::after {

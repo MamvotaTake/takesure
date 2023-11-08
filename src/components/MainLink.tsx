@@ -7,7 +7,7 @@ export const MainLink = () => {
                 <div className='text-2xl px-8 py-5'>Developer</div>
                 <div className={`flex text-lg space-x-16 md:space-x-16 justify-between md:px-8 py-4 rounded-br-lg rounded-bl-lg  transition-all duration-700 cursor-pointer`}>
                     <li>
-                        <NavLink to="/about">About</NavLink>
+                        <NavLink to="/">About</NavLink>
                     </li>
                     <li>
                         <NavLink to="/resume">Resume</NavLink>

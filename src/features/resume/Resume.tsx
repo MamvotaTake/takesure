@@ -1,5 +1,6 @@
 import {AiOutlineBook} from "react-icons/ai";
 import {MdOutlineWork} from "react-icons/md";
+import {Skills} from "./Skills.tsx";
 
 export const Resume = () => {
     return (
@@ -92,6 +93,7 @@ export const Resume = () => {
                         </div>
                     </div>
                 </div>
+                <Skills/>
             </div>
         </>
     );
