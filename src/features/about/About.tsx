@@ -58,10 +58,10 @@ const whatIdo = [
 
 export const About = () => {
     return (
-        <div className='space-y-8 py-12 flex flex-col'>
+        <div className='space-y-8 py-3 md:py-12 flex flex-col'>
             <div className='flex flex-col gap-2'>
-                <h1 className='flex text-4xl font-bold'>A Passionate Web Developer, Business Developer<span className='text-amber-200'>.</span></h1>
-                <p className='text-lg font-normal' >
+                <h1 className='md:flex md:text-4xl text-center text-xl font-extrabold md:font-bold'>A Passionate Web Developer, Business Developer<span className='text-amber-200'>.</span></h1>
+                <p className='text-sm md:text-lg font-normal text-justify' >
                     I&apos;m based in Tomsk, Russia. I strive to build immersive and
                     beautiful web applications through carefully crafted code and
                     user-centric design.
@@ -78,9 +78,9 @@ export const About = () => {
                         />
                     ))}
                 </div>
-                <div className='flex flex-col space-y-8'>
+                <div className='flex flex-col space-y-8 md:overflow-hidden overflow-y-scroll h-52 scrol'>
                     <h1 className='text-2xl font-bold'>Reviews</h1>
-                    <div className='flex gap-7 '>
+                    <div className='flex md:flex-row flex-col sm:gap-7 gap-14 '>
                         {reviews.map((review) => (
                             <Review
                                 key={review.name}

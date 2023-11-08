@@ -18,9 +18,9 @@ export const Resume = () => {
                             <div className='flex justify-center bg-zinc-800 w-4 h-4 rounded-full items-center  time-line'>
                                 <span className='bg-amber-200 w-2 h-2 z-10 rounded-full'/>
                             </div>
-                            <div className='space-y-2'>
+                            <div className='md:space-y-2 space-y-1'>
                                 <p className='text-xl font-semibold'>Ukhta State Technical University</p>
-                                <p className='text-lg'>Russian Language</p>
+                                <p className='text-xs md:text-lg font-bold md:font-normal'>Russian Language</p>
                                 <p className='text-sm text-amber-200'>2017 - 2018</p>
                                 <p className='text-xs leading-5'>Outpost of oil and gas education in the European North of Russia.</p>
                             </div>
@@ -29,9 +29,9 @@ export const Resume = () => {
                             <div className='flex justify-center bg-zinc-800 w-5 h-4 rounded-full items-center'>
                                 <span className='bg-amber-200 w-2 h-2 z-10 rounded-full'/>
                             </div>
-                            <div className='space-y-2'>
+                            <div className='md:space-y-2 space-y-1'>
                                 <p className='text-xl font-semibold'>Tomsk State University of Control Systems and Radioelectronics</p>
-                                <p className='text-lg'>Bachelor Degree</p>
+                                <p className='text-xs md:text-lg font-bold md:font-normal'>Bachelor Degree</p>
                                 <p className='text-sm text-amber-200'>2018 - 2022</p>
                                 <p className='text-xs leading-5'>TUSUR is a recognized leader in the field of training qualified personnel for high-tech sectors of the economy, introducing innovative educational and research programs, applied developments of new technology, equipment and control systems.</p>
                             </div>

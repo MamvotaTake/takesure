@@ -7,7 +7,7 @@ import {AiFillFacebook, AiFillGithub, AiFillLinkedin, AiFillTwitterSquare} from 
 import {ImTelegram} from "react-icons/im";
 export const Sidebar = () => {
     return (
-        <div className='fixed overflow-hidden flex flex-col h-full space-y-7'>
+        <div className='md:fixed relative overflow-hidden hidden md:flex flex-col h-full space-y-7'>
             <div className='flex flex-col space-y-7 items-center '>
                 <div className='bg-zinc-800 w-3/2   rounded-lg'>
                     <img className='rounded-lg w-20 cursor-pointer' src={takers} alt="logo"/>

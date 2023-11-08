@@ -106,7 +106,7 @@ export const Skills = () => {
                     </div>
                     <p className='text-2xl font-bold'>Skills</p>
                 </div>
-                <div className='grid grid-cols-4 md:grid-cols-7 gap-4 mt-4'>
+                <div className='grid grid-cols-3 md:grid-cols-7 gap-4 mt-4'>
                     {skills.map((skill) => (
                         <Skill
                             key={skill.name}

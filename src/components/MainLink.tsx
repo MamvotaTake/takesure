@@ -16,12 +16,12 @@ export const MainLink = () => {
                         <NavLink to="/portfolio">Portfolio</NavLink>
                     </li>
 
-                    <li>
-                        <NavLink to="/blog">Blog</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/blog">News</NavLink>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <NavLink to="/blog">Blog</NavLink>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <NavLink to="/blog">News</NavLink>*/}
+                    {/*</li>*/}
                 </div>
             </ul>
         </>
