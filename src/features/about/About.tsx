@@ -58,7 +58,7 @@ const whatIdo = [
 
 export const About = () => {
     return (
-        <div className='space-y-8 py-3 md:py-12 flex flex-col'>
+        <div className='space-y-8 py-3 md:py-12 flex flex-col mb-20'>
             <div className='flex flex-col gap-2'>
                 <h1 className='md:flex md:text-4xl text-center text-xl font-extrabold md:font-bold'>A Passionate Web Developer, Business Developer<span className='text-amber-200'>.</span></h1>
                 <p className='text-sm md:text-lg font-normal text-justify' >
