@@ -5,7 +5,7 @@ import worldwise from '../../assets/worldwise.jpg'
 export const Portfolio = () => {
     return (
         <>
-            <div className="grid md:grid-cols-3 grid-cols-2  gap-7 py-6 px-6">
+            <div className="grid md:grid-cols-3 grid-cols-1  gap-7 py-6 px-6 mb-16">
                 <div className='relative flex flex-col cursor-pointer overflow-hidden'>
                     <figure className='relative hover:scale-105 hover:opacity-80 w-full rounded-lg overflow-hidden mb-8 transition-all duration-500'>
                         <img className='object-cover w-full h-full rounded-lg transition-all duration-700' src={movie} alt="tech" />
