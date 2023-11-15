@@ -69,7 +69,7 @@ export const About = () => {
 
             </div>
             <div className='flex flex-col gap-8 '>
-                <h1 className='text-2xl font-bold mt-12'>What I Do</h1>
+                <h1 className='text-center md:text-left text-xl md:text-2xl font-bold mt-12'>What I Do</h1>
                 <div className='grid grid-cols-2 gap-7 space-y-8'>
                     {whatIdo.map((ido) => (
                         <WhatIDo
