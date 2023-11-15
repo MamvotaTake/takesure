@@ -12,6 +12,7 @@ import {
 } from "react-icons/bi";
 import {DiReact} from "react-icons/di";
 import {SiCssmodules, SiReactrouter, SiTailwindcss} from "react-icons/si";
+import {Link} from "react-router-dom";
 
 export const Portfolio = () => {
     return (
@@ -27,7 +28,7 @@ export const Portfolio = () => {
                             <DiReact/>
                             <SiTailwindcss/>
                             <SiReactrouter/>
-                            <BiLogoTypescript/>
+                            <BiLogoJavascript/>
                             <BiGitMerge/>
                         </div>
                         <div className='flex justify-between'>
@@ -36,7 +37,9 @@ export const Portfolio = () => {
                                 <p className='text-sm text-stone-500'>Web Development</p>
                             </div>
                             <div className='flex gap-2 md:gap-6'>
-                                <BiLogoGithub className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                <Link to='https://github.com/MamvotaTake/movie-house'>
+                                    <BiLogoGithub className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                </Link>
                                 <BiLink className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
                             </div>
                         </div>
@@ -63,7 +66,9 @@ export const Portfolio = () => {
                                 <p className='text-sm text-stone-500'>Web Development</p>
                             </div>
                             <div className='flex gap-2 md:gap-6'>
-                                <BiLogoGithub className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                <Link to='https://github.com/MamvotaTake/movie-house'>
+                                    <BiLogoGithub className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                </Link>
                                 <BiLink className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
                             </div>
                         </div>
@@ -88,7 +93,9 @@ export const Portfolio = () => {
                                 <p className='text-sm text-stone-500'>Web Development</p>
                             </div>
                             <div className='flex gap-2 md:gap-6'>
-                                <BiLogoGithub className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                <Link to='https://github.com/MamvotaTake/worldwise'>
+                                    <BiLogoGithub className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                </Link>
                                 <BiLink className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
                             </div>
                         </div>
