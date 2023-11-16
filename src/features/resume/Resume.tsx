@@ -1,12 +1,27 @@
 import {AiOutlineBook} from "react-icons/ai";
 import {MdOutlineWork} from "react-icons/md";
 import {Skills} from "./Skills.tsx";
+import {BiCheck} from "react-icons/bi";
 
 export const Resume = () => {
     return (
         <>
             <div className='flex flex-col'>
                 <div>
+                    <div className='md:flex flex-col space-y-5 justify-between'>
+                        <div className='flex flex-col space-y-2'>
+                            <span className='md:flex flex-col items-center gap-2'>
+                                <span className='font-semibold'>Employment:</span>
+                                full time, part time, project work, volunteering
+                            </span>
+                            <span  className='md:flex flex-col items-center gap-2'>
+                                <span className='font-semibold'>Work schedule:</span>
+                                full day, shift schedule, flexible schedule, remote working
+                            </span>
+                        </div>
+                        <div className='flex items-center gap-2 text-stone-300 md:text-black px-2 rounded-full bg-none md:bg-amber-200/70'>Actively searching for a job <BiCheck className='text-xl fill-amber-200'/></div>
+
+                    </div>
                     <div className='flex items-center gap-4 mt-8'>
                         <div className='flex justify-center bg-zinc-800 w-12 h-12 rounded items-center'>
                             <AiOutlineBook className='text-4xl  fill-amber-200'/>

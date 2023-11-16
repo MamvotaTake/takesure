@@ -46,17 +46,17 @@ const whatIdo = [
     },
     {
         name: 'Backend Developer',
-        description: 'The most modern and high-quality design made at a professional level.',
+        description: 'Build and deploy secure and scalable application using contemporary frameworks',
         icon: <PiCodesandboxLogo className='text-6xl fill-amber-200'/>
     },
     {
         name: 'Business Developer',
-        description: 'The most modern and high-quality design made at a professional level.',
+        description: 'Invest in modern, scalable technology to automate and reduce our workflows eg Sales Navigator, Get Sales, Apollo',
         icon: <IoIosBusiness className='text-6xl fill-amber-200'/>
     },
     {
         name: 'UX/UI',
-        description: 'The most modern and high-quality design made at a professional level.',
+        description: 'Creating a user-friendly UX/UI design by understand who our users are, what they want, and how they behave.',
         icon: <FaFigma className='text-6xl fill-amber-200'/>
     }
 ]
@@ -106,7 +106,7 @@ export const About = () => {
                             <span className='text-sm font-normal'>13.06.1997</span>
                         </span>
                             <span>
-                            <img src={take01} alt="phone" />
+                            <img  src={take01} alt="phone" />
                         </span>
                             <span className='relative flex flex-col text-sm  font-normal text-center'>
                             <LuBringToFront className='absolute left-0 -top-2.5  text-4xl'/>
@@ -124,20 +124,22 @@ export const About = () => {
                             </div>
                             <div className='flex justify-between py-4 -py-5'>
                                 <div>
-                                    <img className='border border-zinc-400 p-1 rounded-lg w-28 h-28' src={qrcode} alt="phone" />
+                                    <img className='border border-zinc-200 p-1 rounded-lg w-28 h-28' src={qrcode} alt="phone" />
+                                    <p className='text-zinc-700'>@takesureM</p>
                                 </div>
                                 <div className='flex flex-col space-y-2'>
-                                <span className='flex flex-col text-gray-900 font-light'>
-                                    Phone Number
-                                    <span className='font-bold'>8999-576-82-14</span>
+                                <span className='flex text-sm uppercase flex-col text-gray-900 font-light'>
+                                    Phone Number:
+                                    <span className='font-bold capitalize text-sm'>8999-576-82-14</span>
                                 </span>
-                                    <span className='flex flex-col text-gray-900 font-light'>
-                                    Location
-                                    <span className='font-bold'>Tomsk, Russia</span>
+
+                                    <span className='flex text-sm uppercase flex-col text-gray-900 font-light'>
+                                    Location:
+                                    <span className='font-bold capitalize text-sm'>Tomsk, Russia</span>
                                 </span>
-                                    <span className='flex flex-col text-gray-900 font-light'>
-                                    Nationality
-                                    <span className='font-bold'>Zimbabwean</span>
+                                    <span className='flex text-sm uppercase flex-col text-gray-900 font-light'>
+                                    Nationality:
+                                    <span className='font-bold capitalize text-sm'>Zimbabwean</span>
                                 </span>
                                 </div>
                             </div>
