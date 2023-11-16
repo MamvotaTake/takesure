@@ -12,7 +12,7 @@ export const AppLayout = () => {
                 </div>
                 <div className="bg-zinc-900 shadow-2xl shadow-zinc-950 rounded-lg bg-gradient-to-t from-zinc-950 to-gray-950 overflow-y-scroll">
                     <Header/>
-                    <main className="flex flex-col px-8 py-8 text-stone-300">
+                    <main className="flex flex-col px-4 md:px-8 py-8 text-stone-300">
                         <Outlet/>
                     </main>
                     <Footer/>

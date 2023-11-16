@@ -5,6 +5,11 @@ import {FaFigma} from "react-icons/fa";
 
 import {Review} from "../../components/Review.tsx";
 import {WhatIDo} from "./WhatIDo.tsx";
+import {LuBringToFront} from "react-icons/lu";
+import take01 from "../../assets/take01.png"
+import qrcode from "../../assets/qrcode.png"
+
+import {BiLogoFacebookCircle, BiLogoGithub, BiLogoLinkedin, BiLogoTelegram} from "react-icons/bi";
 
 const reviews  = [
     {
@@ -58,7 +63,7 @@ const whatIdo = [
 
 export const About = () => {
     return (
-        <div className='space-y-8 py-3 md:py-12 flex flex-col mb-20'>
+        <div className='space-y-8 py-3 md:py-12 flex flex-col mb-8'>
             <div className='flex flex-col gap-2'>
                 <h1 className='md:flex md:text-4xl text-center text-xl font-extrabold md:font-bold'>A Passionate Web Developer, Business Developer<span className='text-amber-200'>.</span></h1>
                 <p className='text-sm md:text-lg font-normal text-justify' >
@@ -70,7 +75,7 @@ export const About = () => {
             </div>
             <div className='flex flex-col gap-8 '>
                 <h1 className='text-center md:text-left text-xl md:text-2xl font-bold mt-12'>What I Do</h1>
-                <div className='grid grid-cols-2 gap-7 space-y-8'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-7 space-y-8'>
                     {whatIdo.map((ido) => (
                         <WhatIDo
                             key={ido.name}
@@ -78,7 +83,7 @@ export const About = () => {
                         />
                     ))}
                 </div>
-                <div className='flex flex-col space-y-8 md:overflow-hidden overflow-y-scroll h-52 scrol'>
+                <div className='flex flex-col space-y-8 md:overflow-hidden overflow-y-scroll h-52 scroll'>
                     <h1 className='text-2xl font-bold'>Reviews</h1>
                     <div className='flex md:flex-row flex-col sm:gap-7 gap-14 '>
                         {reviews.map((review) => (
@@ -88,6 +93,56 @@ export const About = () => {
                             />
                         ))}
 
+                    </div>
+                </div>
+            </div>
+            <div className='md:hidden space-y-4 flex flex-col'>
+                <h1 className='text-2xl font-bold'>Get in touch</h1>
+                <div className='relative flex flex-col'>
+                    <div className='bg-white rounded-t-3xl '>
+                        <div className='flex  space-y-4 px-4 py-3'>
+                        <span className='flex text-lg font-bold text-gray-900 flex-col'>
+                            Takesure Mamvota
+                            <span className='text-sm font-normal'>13.06.1997</span>
+                        </span>
+                            <span>
+                            <img src={take01} alt="phone" />
+                        </span>
+                            <span className='relative flex flex-col text-sm  font-normal text-center'>
+                            <LuBringToFront className='absolute left-0 -top-2.5  text-4xl'/>
+                            <span className='text-black text-xs font-semibold'>3</span> years
+                        </span>
+                        </div>
+                    </div>
+                    <div className='relative -top-12 bg-amber-500 w-full rounded-3xl'>
+                        <div className='flex flex-col  space-y-4 px-4 py-3'>
+                            <div className='flex gap-5 items-center text-gray-900 text-lg'>
+                                <BiLogoGithub/>
+                                <BiLogoLinkedin/>
+                                <BiLogoFacebookCircle/>
+                                <BiLogoTelegram/>
+                            </div>
+                            <div className='flex justify-between py-4 -py-5'>
+                                <div>
+                                    <img className='border border-zinc-400 p-1 rounded-lg w-28 h-28' src={qrcode} alt="phone" />
+                                </div>
+                                <div className='flex flex-col space-y-2'>
+                                <span className='flex flex-col text-gray-900 font-light'>
+                                    Phone Number
+                                    <span className='font-bold'>8999-576-82-14</span>
+                                </span>
+                                    <span className='flex flex-col text-gray-900 font-light'>
+                                    Location
+                                    <span className='font-bold'>Tomsk, Russia</span>
+                                </span>
+                                    <span className='flex flex-col text-gray-900 font-light'>
+                                    Nationality
+                                    <span className='font-bold'>Zimbabwean</span>
+                                </span>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
