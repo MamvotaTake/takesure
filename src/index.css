@@ -22,7 +22,7 @@
         content: "";
         position: absolute;
         top: -32px;
-        left: 6px;
+        left: 5px;
         width: 1px;
         height: calc(100% + 50px);
         background: theme(colors.zinc.700);
@@ -47,7 +47,7 @@
     .timeline-item::after {
         content: "";
         position: absolute;
-        top: 5px;
+        top: 6px;
         left: -33px;
         height: 6px;
         width: 6px;

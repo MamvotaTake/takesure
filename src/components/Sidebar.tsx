@@ -1,5 +1,5 @@
 import takers from "../assets/take01.png";
-import qrcode from "../assets/qrcode.png";
+import qrcode from "../assets/qrcode1.png";
 import {CiMail} from "react-icons/ci";
 import {BiCalendar, BiCurrentLocation} from "react-icons/bi";
 import {TiDevicePhone} from "react-icons/ti";
@@ -56,28 +56,28 @@ export const Sidebar = () => {
                     </div>
                 </div>
                 <div className='flex items-center justify-center gap-4 cursor-pointer'>
-                <span>
+                <Link to="https://www.facebook.com/takesure.mamvota.1">
                     <AiFillFacebook className="text-2xl fill-stone-200"/>
-                </span>
-                    <span>
+                </Link>
+                    <Link to="https://github.com/MamvotaTake">
                     <AiFillGithub className="text-2xl fill-stone-200"/>
-                </span>
-                    <span>
+                </Link>
+                    <Link to="https://www.linkedin.com/in/mamvota-takesure-0a703b1b9/">
                     <AiFillLinkedin className="text-2xl fill-stone-200"/>
-                </span>
+                </Link>
                     <span>
                     <AiFillTwitterSquare className="text-2xl fill-stone-200"/>
                 </span>
 
                 </div>
-                <div className='absolute bottom-0 hover:-translate-y-7 mt-4 mb-8 transition-all ease-in-out duration-1000 translate-y-20 rounded-lg  w-full cursor-pointer bg-zinc-800 py-1 px-4'>
+                <div className='absolute bottom-0 hover:-translate-y-7 mt-4 mb-8 transition-all ease-in-out duration-1000 translate-y-96 rounded-lg  w-full cursor-pointer bg-zinc-800 py-3 px-4'>
                     <div className='flex text-xs text-stone-300  justify-between'>
-                        <span>@takesure</span>
+                        <span>@takesureM</span>
                         <ImTelegram className="text-lg fill-stone-300"/>
                     </div>
                     <div className='flex items-center justify-between gap-4 py-4'>
-                        <img className='w-20 cursor-pointer hover:animate-bounce' src={qrcode} alt="logo"/>
-                        <p className='text-lg text-stone-300'>Hi, I'm His Telegram</p>
+                        <img className='cursor-pointer' src={qrcode} alt="logo"/>
+                        {/*<p className='text-lg text-stone-300'>Hi, I'm His Telegram</p>*/}
                     </div>
                 </div>
             </div>
