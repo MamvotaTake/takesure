@@ -115,27 +115,27 @@ export const About = () => {
 
                 </div>
                 <h1 className='text-xl font-bold mt-8 '>Tools:</h1>
-                <div className='flex justify-between text-5xl text-zinc-700 cursor-pointer'>
+                <div className='flex justify-between text-lg md:text-5xl text-zinc-700'>
                     <Tooltip title="Visual Studio Code" placement="bottom">
-                        <SiVisualstudiocode/>
+                        <SiVisualstudiocode className='cursor-pointer'/>
                     </Tooltip>
                     <Tooltip title="Git" placement="top">
-                        <BsGit/>
+                        <BsGit  className='cursor-pointer'/>
                     </Tooltip>
                     <Tooltip title="Webstorm" placement="top">
-                        <SiWebstorm/>
+                        <SiWebstorm  className='cursor-pointer'/>
                     </Tooltip>
                     <Tooltip title="Github" placement="top">
-                        <BiLogoGithub/>
+                        <BiLogoGithub  className='cursor-pointer'/>
                     </Tooltip>
                     <Tooltip title="Notion" placement="top">
-                        <SiNotion/>
+                        <SiNotion  className='cursor-pointer'/>
                     </Tooltip>
                     <Tooltip title="Postman" placement="top">
-                        <SiPostman/>
+                        <SiPostman  className='cursor-pointer'/>
                     </Tooltip>
                     <Tooltip title="Anaconda" placement="top">
-                        <SiAnaconda/>
+                        <SiAnaconda  className='cursor-pointer'/>
                     </Tooltip>
 
                 </div>
