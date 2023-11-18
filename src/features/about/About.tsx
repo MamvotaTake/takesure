@@ -2,7 +2,7 @@ import {HiMiniCodeBracketSquare} from "react-icons/hi2";
 import {PiCodesandboxLogo} from "react-icons/pi";
 import {IoIosBusiness} from "react-icons/io";
 import {FaFigma} from "react-icons/fa";
-
+import { Tooltip } from 'antd';
 import {Review} from "../../components/Review.tsx";
 import {WhatIDo} from "./WhatIDo.tsx";
 import {LuBringToFront} from "react-icons/lu";
@@ -13,7 +13,15 @@ import bot from "../../assets/bot.png"
 import lean from "../../assets/lean.png"
 
 
-import {BiLink, BiLogoFacebookCircle, BiLogoGithub, BiLogoLinkedin, BiLogoTelegram} from "react-icons/bi";
+import {
+    BiLink,
+    BiLogoFacebookCircle,
+    BiLogoGithub,
+    BiLogoLinkedin,
+    BiLogoTelegram,
+} from "react-icons/bi";
+import {BsGit} from "react-icons/bs";
+import {SiAnaconda, SiNotion, SiPostman, SiVisualstudiocode, SiWebstorm} from "react-icons/si";
 
 const reviews  = [
     {
@@ -106,6 +114,32 @@ export const About = () => {
                     </span>
 
                 </div>
+                <h1 className='text-xl font-bold mt-8 '>Tools:</h1>
+                <div className='flex justify-between text-5xl text-zinc-700 cursor-pointer'>
+                    <Tooltip title="Visual Studio Code" placement="bottom">
+                        <SiVisualstudiocode/>
+                    </Tooltip>
+                    <Tooltip title="Git" placement="top">
+                        <BsGit/>
+                    </Tooltip>
+                    <Tooltip title="Webstorm" placement="top">
+                        <SiWebstorm/>
+                    </Tooltip>
+                    <Tooltip title="Github" placement="top">
+                        <BiLogoGithub/>
+                    </Tooltip>
+                    <Tooltip title="Notion" placement="top">
+                        <SiNotion/>
+                    </Tooltip>
+                    <Tooltip title="Postman" placement="top">
+                        <SiPostman/>
+                    </Tooltip>
+                    <Tooltip title="Anaconda" placement="top">
+                        <SiAnaconda/>
+                    </Tooltip>
+
+                </div>
+
             </div>
             <div className='flex flex-col gap-8 '>
                 <h1 className='text-center md:text-left text-xl md:text-2xl font-bold mt-12'>What I Do</h1>
