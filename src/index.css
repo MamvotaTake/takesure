@@ -32,7 +32,7 @@
         --scale: 0.8;
 
         background: theme(colors.zinc.700);
-        color: theme(colors.amber.200);
+        color: theme(colors.cyan.200);
         position: absolute;
         top: 50%;
         left: 50%;

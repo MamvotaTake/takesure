@@ -8,8 +8,12 @@ import {WhatIDo} from "./WhatIDo.tsx";
 import {LuBringToFront} from "react-icons/lu";
 import take01 from "../../assets/take01.png"
 import qrcode from "../../assets/qrcode.png"
+import agric from "../../assets/agric.png"
+import bot from "../../assets/bot.png"
+import lean from "../../assets/lean.png"
 
-import {BiLogoFacebookCircle, BiLogoGithub, BiLogoLinkedin, BiLogoTelegram} from "react-icons/bi";
+
+import {BiLink, BiLogoFacebookCircle, BiLogoGithub, BiLogoLinkedin, BiLogoTelegram} from "react-icons/bi";
 
 const reviews  = [
     {
@@ -42,36 +46,66 @@ const whatIdo = [
     {
         name: 'Frontend Developer',
         description: 'The most modern and high-quality design made at a professional level.',
-        icon: <HiMiniCodeBracketSquare className='text-6xl fill-amber-200'/>
+        icon: <HiMiniCodeBracketSquare className='text-6xl fill-cyan-700'/>
     },
     {
         name: 'Backend Developer',
         description: 'Build and deploy secure and scalable application using contemporary frameworks',
-        icon: <PiCodesandboxLogo className='text-6xl fill-amber-200'/>
+        icon: <PiCodesandboxLogo className='text-6xl fill-cyan-700'/>
     },
     {
         name: 'Business Developer',
         description: 'Invest in modern, scalable technology to automate and reduce our workflows eg Sales Navigator, Get Sales, Apollo',
-        icon: <IoIosBusiness className='text-6xl fill-amber-200'/>
+        icon: <IoIosBusiness className='text-6xl fill-cyan-700'/>
     },
     {
         name: 'UX/UI',
         description: 'Creating a user-friendly UX/UI design by understand who our users are, what they want, and how they behave.',
-        icon: <FaFigma className='text-6xl fill-amber-200'/>
+        icon: <FaFigma className='text-6xl fill-cyan-700'/>
     }
 ]
 
 export const About = () => {
     return (
         <div className='space-y-8 py-3 md:py-12 flex flex-col mb-8'>
-            <div className='flex flex-col gap-2'>
-                <h1 className='md:flex md:text-4xl text-center text-xl font-extrabold md:font-bold'>A Passionate Web Developer, Business Developer<span className='text-amber-200'>.</span></h1>
-                <p className='text-sm md:text-lg font-normal text-justify' >
-                    I&apos;m based in Tomsk, Russia. I strive to build immersive and
-                    beautiful web applications through carefully crafted code and
-                    user-centric design.
-                </p>
+            <div className='relative space-y-8 flex flex-col'>
+                <div className='flex flex-col gap-5'>
+                    <h1 className='md:flex md:text-6xl md:text-left  text-xl font-extrabold md:font-bold'>I am passionate about science because it is a way of engaging with Nature.</h1>
+                    <p className='text-sm md:text-lg font-normal text-justify' >
+                        {/*I&apos;m based in Tomsk, Russia. I strive to build immersive and*/}
+                        {/*beautiful web applications through carefully crafted code and*/}
+                        {/*user-centric design.*/}
+                        In the world of science and technology, there is no doubt that people are opting for the internet as a mode of communication.
+                        It is one such reason that is responsible for bringing millions of people together in a fraction of seconds or sometimes minutes.
+                    </p>
 
+                </div>
+                <h1 className='text-2xl font-bold mt-8 md:mt-0'>My passion: </h1>
+                <div className='grid grid-cols-1 mb-40 md:grid-cols-3 gap-4'>
+                    <span className='flex  justify-between bg-zinc-700 p-2 rounded-lg'>
+                        <span className='flex items-center gap-4'>
+                            <img src={agric} alt="avatar" className=' h-12 w-12 rounded-full   object-cover' />
+                        <p>AgroTechnology</p>
+                        </span>
+                        <BiLink className='text-xl cursor-pointer hover:fill-cyan-200 transition-all duration-300'/>
+
+                    </span>
+                    <span className='flex  justify-between bg-zinc-700 p-2 rounded-lg'>
+                        <span className='flex items-center gap-4'>
+                            <img src={bot} alt="avatar" className=' h-12 w-12 rounded-full   object-cover' />
+                            <p>Internet of Things (IoT)</p>
+                        </span>
+                        <BiLink className='text-xl cursor-pointer hover:fill-cyan-200 transition-all duration-300'/>
+                    </span>
+                    <span className='flex  justify-between bg-zinc-700 p-2 rounded-lg'>
+                        <span className='flex items-center gap-4'>
+                            <img src={lean} alt="avatar" className=' h-12 w-12 rounded-full   object-cover' />
+                            <p>Entrepreneur</p>
+                        </span>
+                        <BiLink className='text-xl cursor-pointer hover:fill-cyan-200 transition-all duration-300'/>
+                    </span>
+
+                </div>
             </div>
             <div className='flex flex-col gap-8 '>
                 <h1 className='text-center md:text-left text-xl md:text-2xl font-bold mt-12'>What I Do</h1>
@@ -114,9 +148,9 @@ export const About = () => {
                         </span>
                         </div>
                     </div>
-                    <div className='relative -top-12 bg-amber-500 w-full rounded-3xl'>
+                    <div className='relative -top-12 bg-cyan-900 w-full rounded-3xl'>
                         <div className='flex flex-col  space-y-4 px-4 py-3'>
-                            <div className='flex gap-5 items-center text-gray-900 text-lg'>
+                            <div className='flex gap-5 items-center text-gray-100 text-lg'>
                                 <BiLogoGithub/>
                                 <BiLogoLinkedin/>
                                 <BiLogoFacebookCircle/>
@@ -125,19 +159,19 @@ export const About = () => {
                             <div className='flex justify-between py-4 -py-5'>
                                 <div>
                                     <img className='border border-zinc-200 p-1 rounded-lg w-28 h-28' src={qrcode} alt="phone" />
-                                    <p className='text-zinc-700'>@takesureM</p>
+                                    <p className='text-zinc-100'>@takesureM</p>
                                 </div>
                                 <div className='flex flex-col space-y-2'>
-                                <span className='flex text-sm uppercase flex-col text-gray-900 font-light'>
+                                <span className='flex text-sm uppercase flex-col text-gray-100 font-light'>
                                     Phone Number:
                                     <span className='font-bold capitalize text-sm'>8999-576-82-14</span>
                                 </span>
 
-                                    <span className='flex text-sm uppercase flex-col text-gray-900 font-light'>
+                                    <span className='flex text-sm uppercase flex-col text-gray-100 font-light'>
                                     Location:
                                     <span className='font-bold capitalize text-sm'>Tomsk, Russia</span>
                                 </span>
-                                    <span className='flex text-sm uppercase flex-col text-gray-900 font-light'>
+                                    <span className='flex text-sm uppercase flex-col text-gray-100 font-light'>
                                     Nationality:
                                     <span className='font-bold capitalize text-sm'>Zimbabwean</span>
                                 </span>

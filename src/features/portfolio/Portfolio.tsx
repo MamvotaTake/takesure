@@ -38,9 +38,9 @@ export const Portfolio = () => {
                             </div>
                             <div className='flex gap-2 md:gap-6'>
                                 <Link to='https://github.com/MamvotaTake/movie-house'>
-                                    <BiLogoGithub className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                    <BiLogoGithub className='md:text-xl text-lg hover:text-cyan-200 transition-all duration-500'/>
                                 </Link>
-                                <BiLink className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                <BiLink className='md:text-xl text-lg hover:text-cyan-200 transition-all duration-500'/>
                             </div>
                         </div>
                     </div>
@@ -67,9 +67,9 @@ export const Portfolio = () => {
                             </div>
                             <div className='flex gap-2 md:gap-6'>
                                 <Link to='https://github.com/MamvotaTake/movie-house'>
-                                    <BiLogoGithub className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                    <BiLogoGithub className='md:text-xl text-lg hover:text-cyan-200 transition-all duration-500'/>
                                 </Link>
-                                <BiLink className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                <BiLink className='md:text-xl text-lg hover:text-cyan-200 transition-all duration-500'/>
                             </div>
                         </div>
                     </div>
@@ -94,9 +94,9 @@ export const Portfolio = () => {
                             </div>
                             <div className='flex gap-2 md:gap-6'>
                                 <Link to='https://github.com/MamvotaTake/worldwise'>
-                                    <BiLogoGithub className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                    <BiLogoGithub className='md:text-xl text-lg hover:text-cyan-200 transition-all duration-500'/>
                                 </Link>
-                                <BiLink className='md:text-xl text-lg hover:text-amber-200 transition-all duration-500'/>
+                                <BiLink className='md:text-xl text-lg hover:text-cyan-200 transition-all duration-500'/>
                             </div>
                         </div>
                     </div>

@@ -21,9 +21,9 @@ export const Review = ({review}: ReviewProps) => {
                     </div>
                     <div className='flex flex-col gap-1 mb-8 items-center justify-center text-black font-semibold'>
                         <span className='flex items-center gap-3'>
-                            <AiFillStar className='fill-amber-200'/>
-                            <AiFillStar className='fill-amber-200'/>
-                            <AiFillStar className='fill-amber-200'/>
+                            <AiFillStar className='fill-cyan-700'/>
+                            <AiFillStar className='fill-cyan-700'/>
+                            <AiFillStar className='fill-cyan-700'/>
                             <AiFillStar/>
                         </span>
                         {name}

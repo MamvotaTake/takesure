@@ -10,7 +10,7 @@ export const AppLayout = () => {
                 <div className='relative flex  justify-center rounded-lg  px-5 py-8 bg-gradient-to-t from-gray-900 to-zinc-950 shadow-2xl shadow-zinc-950'>
                     <Sidebar/>
                 </div>
-                <div className="bg-zinc-900 shadow-2xl shadow-zinc-950 rounded-lg bg-gradient-to-t from-zinc-950 to-gray-950 overflow-y-scroll">
+                <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-950 via-gray-900 to-zinc-900 shadow-2xl shadow-zinc-950 rounded-lg  overflow-y-scroll">
                     <Header/>
                     <main className="flex flex-col px-4 md:px-8 py-8 text-stone-300">
                         <Outlet/>
@@ -21,3 +21,4 @@ export const AppLayout = () => {
         </>
     );
 };
+

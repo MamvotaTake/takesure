@@ -30,26 +30,26 @@ export const Sidebar = () => {
 
                 <div className='flex flex-col space-y-7 cursor-pointer'>
                     <div className="flex gap-4 ">
-                        <span> <CiMail className="text-5xl p-2 bg-zinc-800 rounded-lg fill-amber-200"/></span>
+                        <span> <CiMail className="text-5xl p-2 bg-zinc-800 rounded-lg fill-cyan-700"/></span>
                         <div className='flex flex-col text-xs font-semibold uppercase text-zinc-400 leading-7'>
                             Email: <span className='text-xs font-normal text-stone-100 lowercase'>tooyoungmamvota@gmail.com</span>
                         </div>
                     </div>
                     <div className="flex gap-4">
-                        <span> <TiDevicePhone className="text-5xl p-2 bg-zinc-800 rounded-lg fill-amber-200"/></span>
+                        <span> <TiDevicePhone className="text-5xl p-2 bg-zinc-800 rounded-lg fill-cyan-700"/></span>
                         <div className='flex flex-col text-xs font-semibold uppercase text-zinc-400 leading-7'>
                             Phone: <span className='text-xs font-normal text-stone-100 lowercase'>(+7) 999-576-82-14</span>
                         </div>
                     </div>
 
                     <div className="flex gap-4">
-                        <span> <BiCalendar className="text-5xl p-2 bg-zinc-800 rounded-lg fill-amber-200"/></span>
+                        <span> <BiCalendar className="text-5xl p-2 bg-zinc-800 rounded-lg fill-cyan-700"/></span>
                         <div className='flex flex-col text-xs font-semibold uppercase text-zinc-400 leading-7'>
                             Birthday: <span className='text-xs font-normal text-stone-100 capitalize'>June 1997</span>
                         </div>
                     </div>
                     <div className="flex gap-4">
-                        <span> <BiCurrentLocation className="text-5xl p-2 bg-zinc-800 rounded-lg fill-amber-200"/></span>
+                        <span> <BiCurrentLocation className="text-5xl p-2 bg-zinc-800 rounded-lg fill-cyan-700"/></span>
                         <div className='flex flex-col text-xs font-semibold uppercase text-zinc-400 leading-7'>
                             Location: <span className='text-xs font-normal text-stone-100  capitalize'>Tomsk</span>
                         </div>
