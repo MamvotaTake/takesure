@@ -70,7 +70,7 @@ export const About = () => {
         <div className='space-y-8 py-3 md:py-12 flex flex-col mb-8'>
             <div className='relative space-y-8 flex flex-col'>
                 <div className='flex flex-col gap-5'>
-                    <h1 className='md:flex md:text-6xl md:text-left  text-xl font-extrabold md:font-bold'>I am passionate about science because it is a way of engaging with Nature.</h1>
+                    <h1 className='md:flex text-3xl  text-center md:text-4xl md:text-left font-extrabold md:font-bold'>I'm passionate about science because it is a way of engaging with Nature.</h1>
                     <p className='text-sm md:text-lg font-normal text-justify' >
                         {/*I&apos;m based in Tomsk, Russia. I strive to build immersive and*/}
                         {/*beautiful web applications through carefully crafted code and*/}
