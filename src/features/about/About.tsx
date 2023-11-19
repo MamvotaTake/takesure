@@ -17,11 +17,11 @@ import {
     BiLink,
     BiLogoFacebookCircle,
     BiLogoGithub,
-    BiLogoLinkedin,
+    BiLogoLinkedin, BiLogoSlack,
     BiLogoTelegram,
 } from "react-icons/bi";
 import {BsGit} from "react-icons/bs";
-import {SiAnaconda, SiNotion, SiPostman, SiVisualstudiocode, SiWebstorm} from "react-icons/si";
+import {SiAnaconda, SiAsana, SiNotion, SiPostman, SiVisualstudiocode, SiWebstorm} from "react-icons/si";
 
 const reviews  = [
     {
@@ -115,12 +115,18 @@ export const About = () => {
 
                 </div>
                 <h1 className='text-xl font-bold mt-8 '>Tools:</h1>
-                <div className='flex justify-between text-lg md:text-5xl text-zinc-700'>
+                <div className='flex justify-between text-lg md:text-5xl text-zinc-700 overflow-hidden'>
                     <Tooltip title="Visual Studio Code" placement="bottom">
                         <SiVisualstudiocode className='cursor-pointer'/>
                     </Tooltip>
                     <Tooltip title="Git" placement="top">
                         <BsGit  className='cursor-pointer'/>
+                    </Tooltip>
+                    <Tooltip title="Asana" placement="top">
+                        <SiAsana  className='cursor-pointer'/>
+                    </Tooltip>
+                    <Tooltip title="Slack" placement="top">
+                        <BiLogoSlack  className='cursor-pointer'/>
                     </Tooltip>
                     <Tooltip title="Webstorm" placement="top">
                         <SiWebstorm  className='cursor-pointer'/>
@@ -182,7 +188,7 @@ export const About = () => {
                         </span>
                         </div>
                     </div>
-                    <div className='relative -top-12 bg-cyan-900 w-full rounded-3xl'>
+                    <div className='relative -top-12 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-950 via-gray-900 to-zinc-900 w-full rounded-3xl'>
                         <div className='flex flex-col  space-y-4 px-4 py-3'>
                             <div className='flex gap-5 items-center text-gray-100 text-lg'>
                                 <BiLogoGithub/>

@@ -1,6 +1,8 @@
 import pizza from '../../assets/pizza.jpg'
 import movie from '../../assets/movie.png'
 import worldwise from '../../assets/worldwise.jpg'
+import robin from '../../assets/robin.png'
+
 import {
     BiBookContent,
     BiGitMerge,
@@ -17,7 +19,37 @@ import {Link} from "react-router-dom";
 export const Portfolio = () => {
     return (
         <>
+            <div className='flex flex-col gap-7 mb-16'>
+                <div className='space-y-4'>
+                    <h1 className='text-2xl md:text-4xl font-semibold'>Robin Marketplace</h1>
+                    <p className='md:text-lg text-xs text-justify'>
+                        Is a  platform, designed to connect countries in the SADC region (Zimbabwe,Zambia, South Africa, Mozambique, Botswana),
+                        provides a seamless way for individuals and businesses to buy and sell a wide range of products.
+                        From agricultural goods to electronics and handmade crafts, our platform offers a secure environment for transactions.
+                        With features like secure payment options, comprehensive product listings,
+                        and direct communication channels between buyers and sellers, our platform empowers businesses and individuals to trade with ease in the SADC region.
+                    </p>
+                </div>
+                <div className='space-y-4'>
+                    <h1 className='text-xl font-semibold'>Product Scope</h1>
+                    <p className='md:text-lg text-xs text-justify'>
+                        The Robin Marketplace is a cross-platform system that allows customers to buy products online without physically visiting the shop or the country.
+                        It provides automation support for placing orders and facilitates the actual sale. Customers can maintain their shopping cart, add or remove products,
+                        and make purchases using their home country currency. The system is user-friendly and does not require any specific educational level, experience, or
+                        technical expertise. Users can create an account, browse, search, select, and add products to their shopping cart, and proceed to checkout if the
+                        products are available.
+                    </p>
+                </div>
+                <div className='mt-8 space-y-4'>
+                    <p className='text-lg font-semibold'>User Interface for Robin Marketplace</p>
+                    <img className='object-cover w-full h-full rounded-lg' src={robin} alt="tech" />
+                </div>
+                {/*<div>*/}
+                {/*    <p className='text-lg'>Please join our community</p>*/}
+                {/*</div>*/}
+            </div>
             <div className="grid md:grid-cols-3 grid-cols-1  gap-7 py-6 px-6 mb-16">
+
                 <div className='relative flex flex-col cursor-pointer overflow-hidden'>
                     <figure className='relative hover:scale-105 hover:opacity-80 w-full rounded-lg overflow-hidden mb-8 transition-all duration-500'>
                         <img className='object-cover w-full h-full rounded-lg transition-all duration-700' src={movie} alt="tech" />

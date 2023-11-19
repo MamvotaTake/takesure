@@ -7,7 +7,7 @@ export const AppLayout = () => {
     return (
         <>
             <div className="gap-4 rounded-sm grid grid-cols-1 md:grid-cols-[300px_minmax(900px,_1fr)] bg-[#1E1E1E] overflow-hidden  h-screen">
-                <div className='relative flex  justify-center rounded-lg  px-5 py-8 bg-gradient-to-t from-gray-900 to-zinc-950 shadow-2xl shadow-zinc-950'>
+                <div className='relative flex  justify-center rounded-lg  px-5 py-8 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-950 via-gray-900 to-zinc-900 shadow-2xl shadow-zinc-950'>
                     <Sidebar/>
                 </div>
                 <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-950 via-gray-900 to-zinc-900 shadow-2xl shadow-zinc-950 rounded-lg  overflow-y-scroll">

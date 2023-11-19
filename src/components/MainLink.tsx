@@ -48,10 +48,10 @@ export const MainLink = () => {
                         <StyledNavLink to="/">About</StyledNavLink>
                     </li>
                     <li>
-                        <StyledNavLink to="/resume">Resume</StyledNavLink>
+                        <StyledNavLink to="/resume">Skills</StyledNavLink>
                     </li>
                     <li>
-                        <StyledNavLink to="/portfolio">Portfolio</StyledNavLink>
+                        <StyledNavLink to="/portfolio">Projects</StyledNavLink>
                     </li>
 
                     {/*<li>*/}
