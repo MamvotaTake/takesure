@@ -6,7 +6,6 @@ import {TiDevicePhone} from "react-icons/ti";
 import {AiFillFacebook, AiFillGithub, AiFillLinkedin, AiFillTwitterSquare} from "react-icons/ai";
 import {ImTelegram} from "react-icons/im";
 import {Link} from "react-router-dom";
-import {SiAnaconda} from "react-icons/si";
 import {Tooltip} from "antd";
 export const Sidebar = () => {
     return (
