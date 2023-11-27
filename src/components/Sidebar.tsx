@@ -6,6 +6,8 @@ import {TiDevicePhone} from "react-icons/ti";
 import {AiFillFacebook, AiFillGithub, AiFillLinkedin, AiFillTwitterSquare} from "react-icons/ai";
 import {ImTelegram} from "react-icons/im";
 import {Link} from "react-router-dom";
+import {SiAnaconda} from "react-icons/si";
+import {Tooltip} from "antd";
 export const Sidebar = () => {
     return (
         <>
@@ -82,14 +84,23 @@ export const Sidebar = () => {
                 </div>
             </div>
             <div className='flex flex-col'>
-                <div className='md:hidden flex gap-2 items-center text-lg cursor-pointer justify-between text-stone-300 before:content-[""] before:h-0.5 before:w-full before:bg-stone-300 after:content-[""] after:h-0.5 after:w-screen after:bg-stone-300'>
+                <div className='md:hidden flex gap-2 items-center text-lg justify-between text-stone-300 before:content-[""] before:h-0.5 before:w-full before:bg-stone-300 after:content-[""] after:h-0.5 after:w-screen after:bg-stone-300'>
                     <span className='flex gap-2'>
-                    <AiFillGithub/>
-                    <AiFillLinkedin/>
+
+                        <Link to="https://github.com/MamvotaTake">
+                            <AiFillGithub className=' cursor-pointer'/>
+                        </Link>
+                        <Tooltip title="Please make sure your vpn is turned on" placement="bottom">
+                            <Link to="https://www.linkedin.com/in/mamvota-takesure-0a703b1b9/">
+                                <AiFillLinkedin className=' cursor-pointer'/>
+                            </Link>
+                        </Tooltip>
+
+
                 </span>
                     <div>
                         <Link to="https://hh.ru/applicant/resumes/view?resume=023263afff0657d9ee0039ed1f5447756d6e69">
-                            <img className='w-10 h-1/5' src="https://i.hh.ru/logos/svg/hh.ru__min_.svg?v=11032019" alt="" />
+                            <img  className='w-10 h-1/5  cursor-pointer' src="https://i.hh.ru/logos/svg/hh.ru__min_.svg?v=11032019" alt="" />
                         </Link>
                     </div>
                 </div>
