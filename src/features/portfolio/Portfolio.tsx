@@ -98,7 +98,7 @@ export const Portfolio = () => {
                                 <p className='text-sm text-stone-500'>Web Development</p>
                             </div>
                             <div className='flex gap-2 md:gap-6'>
-                                <Link to='https://github.com/MamvotaTake/movie-house'>
+                                <Link to='https://github.com/MamvotaTake/fast-pizza'>
                                     <BiLogoGithub className='md:text-xl text-lg hover:text-cyan-200 transition-all duration-500'/>
                                 </Link>
                                 <BiLink className='md:text-xl text-lg hover:text-cyan-200 transition-all duration-500'/>
