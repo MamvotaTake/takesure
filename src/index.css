@@ -84,6 +84,11 @@
         }
     }
 
+    .image {
+        width: 100%;
+        background: url("./assets/background.jpg") no-repeat center top;
+    }
+
         /* width */
     ::-webkit-scrollbar {
          transition: all .3s ease;

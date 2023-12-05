@@ -75,9 +75,9 @@ const whatIdo = [
 
 export const About = () => {
     return (
-        <div className='space-y-8 py-3 md:py-12 flex flex-col mb-8'>
-            <div className='relative space-y-8 flex flex-col'>
-                <div className='flex flex-col gap-5'>
+        <div className='space-y-8 py-0 px-0  flex flex-col mb-8'>
+            <div className='relative space-y-8 flex flex-col image px-6 py-12'>
+                <div className='flex flex-col gap-5 z-20'>
                     <h1 className='md:flex text-3xl  text-center md:text-4xl md:text-left font-extrabold md:font-bold'>I'm passionate about science because it is a way of engaging with Nature.</h1>
                     <p className='text-sm md:text-lg font-normal text-justify' >
                         {/*I&apos;m based in Tomsk, Russia. I strive to build immersive and*/}
@@ -88,8 +88,8 @@ export const About = () => {
                     </p>
 
                 </div>
-                <h1 className='text-2xl font-bold mt-8 md:mt-0'>My passion: </h1>
-                <div className='grid grid-cols-1 mb-40 md:grid-cols-3 gap-4'>
+                <h1 className='text-2xl font-bold mt-8 md:mt-0  z-20'>Passion: </h1>
+                <div className='grid grid-cols-1 mb-40 md:grid-cols-3 gap-4  z-20'>
                     <span className='flex  justify-between bg-zinc-700 p-2 rounded-lg'>
                         <span className='flex items-center gap-4'>
                             <img src={agric} alt="avatar" className=' h-12 w-12 rounded-full   object-cover' />
@@ -114,8 +114,8 @@ export const About = () => {
                     </span>
 
                 </div>
-                <h1 className='text-xl font-bold mt-8 '>Tools:</h1>
-                <div className='flex justify-between text-lg md:text-5xl text-zinc-700 overflow-hidden'>
+                <h1 className='text-xl font-bold mt-8  z-20'>Tools:</h1>
+                <div className='flex justify-between text-lg md:text-5xl text-zinc-700 overflow-hidden  z-20'>
                     <Tooltip title="Visual Studio Code" placement="bottom">
                         <SiVisualstudiocode className='cursor-pointer'/>
                     </Tooltip>
@@ -145,6 +145,7 @@ export const About = () => {
                     </Tooltip>
 
                 </div>
+                <div className='absolute bg-gradient-to-t from-black to-black/60 z-10 -top-8 left-0 bottom-0 w-full'/>
 
             </div>
 
