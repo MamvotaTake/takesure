@@ -12,8 +12,13 @@ export const AppLayout = () => {
                 </div>
                 <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-950 via-gray-900 to-zinc-900 shadow-2xl shadow-zinc-950 rounded-lg  overflow-y-scroll">
                     <Header/>
-                    <main className="flex flex-col px-4 md:px-8 py-8 text-stone-300">
+                    <main className="flex  px-4 md:px-8 py-8 text-stone-300">
                         <Outlet/>
+                        {/*<div className="flex p-8 max-w-fit">*/}
+                        {/*    <div className="grid grid-cols-1 mb-40 md:grid-cols-3 gap-4  z-20">*/}
+                        {/*        Takesure*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </main>
                     <Footer/>
                 </div>

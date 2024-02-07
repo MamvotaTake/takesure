@@ -149,24 +149,32 @@ export const About = () => {
 
             </div>
 
-            <div className='py-4 space-y-4 md:space-y-2'>
-                <h1 className='text-xl font-bold'>Facts</h1>
+            <div className='flex py-4 space-y-4 md:space-y-2'>
+                <div>
+                    <h1 className='text-xl font-bold'>Facts</h1>
 
                     <li className='space-y-2'>
-                        I had the privilege of participating in the prestigious <span className='font-extrabold text-cyan-600 uppercase'>Акселератор ФРИИ</span> program for a duration of six months.
+                        I had the privilege of participating in the prestigious <span
+                        className='font-extrabold text-cyan-600 uppercase'>Акселератор ФРИИ</span> program for a
+                        duration of six months.
                     </li>
                     <li>I love my PARENTS</li>
 
-                    <p className='flex flex-col'> <li>I speak 3 languages:</li>
+                    <p className='flex flex-col'>
+                        <li>I speak 3 languages:</li>
                         <span className='relative flex mt-2 gap-2 font-light text-stone-400 w-fit p-1 rounded'>
-                            <span className='before:content-["Sh"] before:absolute before:top-2  before:text-sm before:mr-1 before:bg-cyan-600 before:w-5 before:h-4 before:text-gray-900 before:rounded-sm'>Shona</span>
-                            <span className='before:content-["En"] before:absolute before:top-2 before:text-sm before:mr-1 before:bg-cyan-600 before:w-5 before:h-4 before:text-gray-900 before:rounded-sm'>English</span>
-                            <span className='before:content-["Ru"] before:absolute before:top-2 before:text-sm before:mr-1 before:bg-cyan-600 before:w-5 before:h-4 before:text-gray-900 before:rounded-sm'>Russian</span>
+                            <span
+                                className='before:content-["Sh"] before:absolute before:top-2  before:text-sm before:mr-1 before:bg-cyan-600 before:w-5 before:h-4 before:text-gray-900 before:rounded-sm'>Shona</span>
+                            <span
+                                className='before:content-["En"] before:absolute before:top-2 before:text-sm before:mr-1 before:bg-cyan-600 before:w-5 before:h-4 before:text-gray-900 before:rounded-sm'>English</span>
+                            <span
+                                className='before:content-["Ru"] before:absolute before:top-2 before:text-sm before:mr-1 before:bg-cyan-600 before:w-5 before:h-4 before:text-gray-900 before:rounded-sm'>Russian</span>
 
                         </span>
                     </p>
+                </div>
 
-
+                {/*<div>My thesis topic</div>*/}
             </div>
             <div className='flex flex-col gap-8 '>
                 <h1 className='text-center md:text-left text-xl md:text-2xl font-bold mt-12'>What I Do</h1>
